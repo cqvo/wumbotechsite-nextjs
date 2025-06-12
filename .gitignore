@@ -19,6 +19,11 @@
 .DS_Store
 *.pem
 
+# ai
+/.cursor
+*.mdc
+CLAUDE.md
+
 # debug
 npm-debug.log*
 yarn-debug.log*

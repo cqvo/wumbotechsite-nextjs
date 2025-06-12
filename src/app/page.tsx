@@ -3,8 +3,8 @@ import type { SanityDocument } from "next-sanity";
 import { defineQuery } from "next-sanity";
 
 import { sanityClient } from "@/lib/sanity";
-import { PostList } from "@/components/post-list";
-import { Pagination } from "@/components/pagination";
+import { PostList } from "@/components/layout/post-list";
+import { Pagination } from "@/components/layout/pagination";
 
 const POSTS_PER_PAGE = 6;
 

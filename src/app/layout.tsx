@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 import { Providers } from "./providers";
 
@@ -34,6 +35,9 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head />
+      <GoogleTagManager
+        gtmId={process.env.GTM_CONTAINER_ID || "GTM-5K34KN7M"}
+      />
       <body
         className={clsx(
           "min-h-screen text-foreground bg-background font-sans antialiased",
